@@ -12,8 +12,8 @@ public class Ascend {
 		min = Math.min(a,b);
 		min = Math.min(min,c);
 		max = Math.max(a,b);
-		max = Math.max(max, c);
-		mid = Math.min((Math.max(c,b)),(Math.max(a,c)));
+		max = Math.max(max,c);
+		mid = Math.min((Math.max(c,b)),(Math.max(a,b)));
 		System.out.println(min + " " + mid + " " + max);
 	}
 }
