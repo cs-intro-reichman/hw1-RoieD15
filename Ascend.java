@@ -13,7 +13,7 @@ public class Ascend {
 		min = Math.min(min,c);
 		max = Math.max(a,b);
 		max = Math.max(max, c);
-		mid = Math.min(c,b);
+		mid = Math.min((Math.max(c,b)),(Math.max(a,c)));
 		System.out.println(min + " " + mid + " " + max);
 	}
 }
