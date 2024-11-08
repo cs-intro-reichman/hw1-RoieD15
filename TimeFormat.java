@@ -17,7 +17,7 @@ public class TimeFormat {
 		    americanHour = hours-12;
 		if(minutes<10)
 		    minutes = Integer.parseInt(""+args[0].charAt(4));
-		if(hours>=12)
+		if(hours>12)
 		{
 			if(minutes<10)
 			{
@@ -26,14 +26,23 @@ public class TimeFormat {
 			else
 			System.out.print(americanHour+":"+minutes+" PM");
 		}  
-		else
+		else if(hours<12)
 		{
 			if(minutes<10)
 			{
-				System.out.print(americanHour+":0"+minutes+" PM");
+				System.out.print(hours+":0"+minutes+" AM");
 			}
 			else
 			System.out.print(hours+":"+minutes+" AM");
+		}
+		else if(hours==12)
+		{
+			if(minutes<10)
+			{
+				System.out.print(hours+":0"+minutes+" PM");
+			}
+			else
+			System.out.print(hours+":"+minutes+" PM");
 		}
 		    
 
