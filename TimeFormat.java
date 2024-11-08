@@ -17,13 +17,13 @@ public class TimeFormat {
 		if(hours<10)
 			americanHour = args[0].charAt(1);
 		else
-		americanHour = hours-12;
+		    americanHour = hours-12;
 		if(minutes<10)
 			minutes = args[0].charAt(4);
-		if(americanHour<12)
-		System.out.print(americanHour+":"+minutes+" AM");
+		if(hours>=12)
+		    System.out.print(americanHour+":"+minutes+" PM");
 		else
-		System.out.print(americanHour+":"+minutes+" PM");
+		    System.out.print(americanHour+":"+minutes+" AM");
 
 	}
 }
