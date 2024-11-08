@@ -15,11 +15,11 @@ public class TimeFormat {
         // Replace this comment with the rest of your code
 		int americanHour = 0;
 		if(hours<10)
-			americanHour = Integer.parseInt(" "+args[0].charAt(1)+" ");
+			americanHour = Integer.parseInt(+args[0].charAt(1)+"");
 		     else
 		    americanHour = hours-12;
 		if(minutes<10)
-			minutes = Integer.parseInt(" "+args[0].charAt(4)+" ");
+			minutes = Integer.parseInt(+args[0].charAt(4)+"");
 		if(hours>=12)
 		    System.out.print(americanHour+":"+minutes+" PM");
 		else
